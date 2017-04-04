@@ -1,0 +1,33 @@
+<div class="row youtube-player">
+    <div class="col-md-4 col-xs-6 form-group">
+        <div class="icon-addon addon-md col-md-11">
+            <input type="search" placeholder="Search" class="form-control" id="search" ng-model="youtubeSearchText" ng-change="getYoutubeData(youtubeSearchText)">
+            <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+        </div>
+        <p>{{youtubeSearchText}}</p> 
+        <!--<div class="col-md-1">
+            <button type="button" id="pageTokenNext" ng-click="callNextPageFn(nextPageToken)" class="btn btn-default">Next video</button>
+        </div>-->
+        
+    </div>
+    <div class="col-md-8 col-xs-6">
+        <div class="pull-right filter">
+            <span>filter by</span>
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                    <form>
+                        <div class="btn-group">
+                            <button class="btn-default dropdown-toggle" data-toggle="dropdown">Select<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Animation</a></li>
+                                <li><a href="#">Date</a></li>
+                                <li><a href="#">Rate</a></li>
+                            </ul>
+                        </div>
+                    </form>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

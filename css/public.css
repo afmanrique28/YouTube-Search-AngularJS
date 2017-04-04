@@ -1,0 +1,183 @@
+/* HOME PAGE */
+
+/* Carousel */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+
+#mainSlider .carousel-caption{
+    top: 8%;
+}
+
+#mainSlider .carousel-indicators{
+    bottom: 20px;
+    right: 0%;
+    left: 90%;
+    text-align: right;
+    width: 5%;
+    top: 40%;
+    margin-left: 0;
+}
+
+#mainSlider .carousel-indicators li {
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.slide-text {
+    text-align: center;
+}
+
+.slide-text h3{
+    font-size: 2.7em;
+}
+
+.slide-text h3 span{
+    font-weight: 100;
+}
+
+#main-content h2{
+    color: #616161;
+    font-size: 2.1em;
+}
+
+#main-content p{
+    color: #4a4a4a;
+}
+
+.item{
+    position:relative;
+}
+
+
+/* YouTube player and serach */
+
+.youtube-player{
+    padding: 0px;
+    margin-top: 120px;
+}
+
+.youtube-player span{
+    color: #4a4a4a;
+    margin-right: 15px;
+}
+
+a.video-embed {
+    padding: 1px;
+}
+
+a.video-embed img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #e7e7e7;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: 10.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+    color: gray;
+}
+
+/**** Main content ***/
+#main-content {
+    position: relative;
+    z-index: 0;
+}
+
+img.home-image
+{
+    margin-top: -15%;
+    z-index: 2;
+    position: relative;
+    left: 20%;
+    max-width: 80%
+}
+
+.main-content {
+    margin-top: 80px;
+}
+
+/*** Youtube filter ***/
+.filter .nav > li > a {
+    padding: 0px;
+}
+
+.filter .dropdown button {
+    border: 0px;
+}
+
+.filter .pull-right {
+    margin: 0;
+}
+/* END HOME PAGE */
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    #mainSlider .carousel-caption {
+        top: -10%;
+        width: 100%;
+        left: 0;
+        font-size: 10px;
+    }
+    img.home-image {
+        left: 10%;
+        max-width: 70%;
+    }
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+    #mainSlider .carousel-caption {
+        top: -10%;
+        width: 100%;
+        left: 0;
+        font-size: 10px;
+    }
+    img.home-image {
+        left: 10%;
+        max-width: 70%;
+    }
+}
+
+

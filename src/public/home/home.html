@@ -1,0 +1,27 @@
+<!--Slider component-->
+<main-slider></main-slider>
+
+<img ng-src="images/Computer.png" alt="computer" class="home-image">
+
+<div id="main-content" class="container" ng-controller='youtubeController'>
+
+  <section class="main-content">
+    <h2>Lorem Ipsum dolor</h2>
+    <p>Amet velit cupidatat dolor deserunt ea voluptate ea enim incididunt aute adipisicing mollit veniam id. Veniam incididunt
+      cupidatat fugiat exercitation nostrud nulla incididunt veniam mollit. Velit non velit reprehenderit dolore qui dolor
+      proident enim elit Lorem excepteur. Eiusmod officia anim irure ullamco sint laborum.</p>
+  </section>
+
+
+  <youtube-search></youtube-search>
+
+  <div ng-if="checkDataLength(youtubeData)">
+    <div id="list">
+      <div class="row">
+        <div class="col-xs-6 col-md-4" ng-repeat="data in youtubeData">
+          <a class="video-embed" target="_block" href="https://www.youtube.com/watch?v={{data.id.videoId}}"><img alt="{{data.snippet.title}}" ng-src="{{data.snippet.thumbnails.high.url}}"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
